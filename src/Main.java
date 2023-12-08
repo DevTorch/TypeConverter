@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
         //Переводим римские в арабские
         RomanToArabic roman = new RomanToArabic();
-        System.out.println(roman.romanToArabic("XXXID"));
+        System.out.println(roman.romanToArabic("MMMCMXCIX"));
 
         //Переводим арабские в римские с использованием массивов
         ArabicToRomanUsingArray arabic_array = new ArabicToRomanUsingArray();
@@ -15,6 +15,6 @@ public class Main {
         System.out.println(arabic_hashmap.arabicToRoman(3999));
 
         System.out.println("-----!!TRIPLE PLAY!!-----");
-        //System.out.println(arabic_hashmap.arabicToRoman(roman.romanToArabic(arabic_array.arabicToRoman(3999))));
+        System.out.println(arabic_hashmap.arabicToRoman(roman.romanToArabic(arabic_array.arabicToRoman(3999))));
     }
 }
