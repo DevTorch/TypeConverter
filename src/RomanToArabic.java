@@ -4,8 +4,7 @@ import java.util.Map;
 /** ROMAN NUMERALS TO ARABIC NUMERALS CONVERTER */
 public class RomanToArabic {
     static boolean check(String string) {
-        return string.matches("^(M{0,3})(D?C{0,3}|C[DM])(L?X{0,3}|X[LC])(V?I{0,3}|I[VX])$");
-        //return new RomanInputCheck(string).check();
+        return string.matches("^(M{0,3})(D?C{0,3}|C[DM])(L?X{0,3}|X[LC])(V?I{0,3}|I[VX])$"); //RegEx (c)) WiKi
     }
 
     public int romanToArabic(String s) {
