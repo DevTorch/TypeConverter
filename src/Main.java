@@ -1,16 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-        //ѕереводим римские в арабские
+        //Converting Roman numerals into Arabic
         RomanToArabic roman = new RomanToArabic();
         System.out.println(roman.romanToArabic("MMMCMXCIX"));
 
-        //ѕереводим арабские в римские с использованием массивов
+        //Converting Arabic numerals to Roman using arrays
         ArabicToRomanUsingArray arabic_array = new ArabicToRomanUsingArray();
         System.out.println(arabic_array.arabicToRoman(3999));
-        //ѕереводим арабские в римские с использованием рекурсии
+        //Converting Arabic numerals to Roman using recursion
         ArabicToRomanRecursion arabic_recursion = new ArabicToRomanRecursion();
         System.out.println(arabic_recursion.arabicToRoman(3999));
-        //ѕереводим арабские в римские с использованием LinkedHashMap
+        //Converting Arabic numerals to Roman using LinkedHashMap
         ArabicToRomanHashMap arabic_hashmap = new ArabicToRomanHashMap();
         System.out.println(arabic_hashmap.arabicToRoman(3999));
 
